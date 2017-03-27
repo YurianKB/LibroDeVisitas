@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Libro de Visitas</title>
+  </head>
+  <body style="background:#088A85">
+    <div class="">
+        <h1><font color="#FFFFFF" face="Century">Artículos</font></h2>
+        <div id="contenedor">
+        </div>
+
+        <div class="scroll" hidden="" id="divConScroll">
+
+          <ol id="listaDeVisitas">
+          </ol>
+        </div>
+    </div>
+    <div class="" >
+      <h2><font color="#FFFFFF" face="Century">Crear Artículo</font></h2>
+      <button type="button" name="button" onclick="textoGrande();">Texto Grande</button>
+      <button type="button" name="button" onclick="textoMediano();">Texto Mediano</button>
+      <button type="button" name="button" onclick="textoPequeno();">Texto Chico</button>
+      <button type="button" name="button" onclick="colorTexto();">Color de Texto</button>
+      <button type="button" name="button" onclick="colorFondo();">Color de Fondo</button>
+      <button type="button" name="button" onclick="alinearIzquierda();" img="assets/images/imagenTextoLeft.jpeg">Alinear Izquierda</button>
+      <button type="button" name="button" onclick="centrar();">Centrar</button>
+      <button type="button" name="button" onclick="alinearDerecha();">Alinear Derecha</button>
+      <button type="button" name="button" onclick="agregarImagen()">Agregar imagen</button>
+      <select>
+        <option value="Verdana">Verdana</option>
+        <option value="Arial">Arial</option>
+        <option value="cursive">Comic Sans</option>
+        <option value="fantasy">Century Gothic</option>
+      </select><br/>
+
+      <textarea id="espacioTexto" name="name" rows="8" cols="80" onkeyup="obtenerTexto()"></textarea>
+
+      <h3><font color="#FFFFFF" face="Century">Contenido:</font></h3>
+      <div id="visita">
+        <button id="botonEliminar" value=0 type="button" onclick="eliminarNota(this.value );" hidden="">Eliminar Nota</button>
+        <p id="text" ></p>
+        <img  id="imagenNota" src="" alt="" hidden="">
+        <hr id="lineaSeparadora" hidden/>
+      </div>
+
+      <div>
+        <button type="button" name="button" onclick="enviar();">Enviar</button>
+      </div>
+      <IMG SRC="https://img.clipartfest.com/a4bc1a797b3f37992078e7e43dba5272_book-open-clip-art-at-clker-book-pictures-cartoon_600-272.png">
+    <script type="text/javascript" src= "js/librodevisitas.js">
+    </script>
+  </body>
+</html>
